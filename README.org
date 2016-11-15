@@ -1,0 +1,10 @@
+* structure
+- src/ :: source php goes here
+- dist/ :: statically render of what's in src/
+- gen.sh :: generate a single src/ file
+- gen_all.sh :: generate them all
+- watch.sh :: watch src/ for changes and rerun gen.
+* commands
+- ./gen.sh $1 :: regenerate a particular file in src/
+- ./gen_all.sh :: do them all
+- ./watch.sh :: watch for changes and regen.
