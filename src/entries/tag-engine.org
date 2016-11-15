@@ -1,0 +1,39 @@
+#+OPTIONS: toc:nil
+* The Tag Engine
+[[/][back to main]]
+An idea by Guy Romm ; <2016-09-03 Sat>
+** Preface
+Currently, there are many services that offer related / relevant recommendations to their users in a specific vertical. \\
+These recommendations are usually based on matching the user's known interests, to interests of similar users. Here are some blatant examples:
+- music :: [[http://last.fm/][last.fm]]
+- food/places :: [[https://foursquare.com/][foursquare.com]]
+- books :: goodreads.com
+Some common things about these services:
+- the user's information is collected and generally is is stored in a fashion that makes the user personally identifiable.
+- they are limited to a particular domain/vertical.
+** What's wrong?
+- Privacy-aware users would like to pursue & explore interests without having to give personally identifiable information away to a 3rd party.
+- It would be beneficial to discover in a cross-domain fashion. For instance: user likes book A, therefore he should watch movie B.
+- Currently, services hoard on data & mine it in order to achieve business objectives.
+- All services seems to be solving the same problem, nobody is sharing data.
+** Proposal
+Create a SaaS that solves the particular problem of tag matchign and related recommendations for type for end users & 3rd parties (other services).
+This would effectively disconnect and solve the problem of tag matching & discovery in an isolated way, that would be both open and privacy-friendly.
+*** Create a database of tags from all sorts of domains. the tags would correspond to items of:
+- literature, poetry
+- music
+- cinema
+- locations / places
+Making such a database is as simple as collecting / scraping data from open sources.
+*** Create an API / UI, allowing a user, or a service on behalf of the user to:
+- upload a set of tags
+- update it
+- introduce new tags
+The tag set of an individual would not make the user personally identifiable.
+The user would then be able to able to query the API and
+- retrieve all tags which may be relevant to him/her by a specified treshold.
+- obtain only new/changed tags that may be relevant to him, or the ones that stopped being relevant.
+Additionally, it will be possible to
+- configure receiving e-mail alerts or other kinds of push notifications regarding a change in tags.
+
+
